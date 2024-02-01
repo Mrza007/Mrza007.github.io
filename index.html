@@ -1,59 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        ul {
+            list-style-type: square;
+            color: #666;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apa itu Web Server?</h1>
+    <p>Sebuah <strong>web server</strong> adalah perangkat lunak atau perangkat keras yang menyediakan layanan untuk melayani permintaan dari klien melalui protokol HTTP atau HTTPS. Fungsi utama web server adalah menyimpan, mengelola, dan mengirimkan halaman web kepada pengguna atau klien yang mengaksesnya melalui browser web.</p>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <h2>Proses Kerja Web Server</h2>
+    <ul>
+        <li><strong>Permintaan dari Klien:</strong> Pengguna membuka browser dan meminta halaman web dengan mengakses suatu URL.</li>
+        <li><strong>Protokol HTTP/HTTPS:</strong> Permintaan tersebut dikirim ke web server melalui protokol HTTP atau HTTPS.</li>
+        <li><strong>Pengolahan Permintaan:</strong> Web server memproses permintaan tersebut, mencari halaman web yang diminta, dan menyiapkan respons.</li>
+        <li><strong>Respon ke Klien:</strong> Web server mengirimkan halaman web yang diminta sebagai respons kembali ke browser pengguna melalui protokol HTTP/HTTPS.</li>
+        <li><strong>Tampilan di Browser:</strong> Browser menerima respons dan menampilkan halaman web kepada pengguna.</li>
+    </ul>
 
-    <title>Web server</title>
-  </head>
-  <body>
-    <h1>Web Server</h1>
-    <p>web server adalah perangkat lunak yang menyediakan layanan untuk melayani permintaan dari klien melalui protokol HTTP 
-      (Hypertext Transfer Protocol) atau HTTPS (Hypertext Transfer Protocol Secure). Fungsi utama web server adalah menyimpan, 
-      mengelola, dan mengirimkan halaman web kepada pengguna atau klien yang mengaksesnya melalui browser web.</p>
-    <h1>Beberapa Aplikasi Web Server</h1>
-    <h2>Aplikasi Web Server dan Beberapa Contohnya</h2>
-    <p>Aplikasi web server merujuk pada perangkat lunak yang bertanggung jawab atas pengelolaan permintaan dan penyediaan halaman web kepada pengguna melalui protokol HTTP atau HTTPS. Ini adalah komponen kunci dalam infrastruktur web yang memungkinkan situs web dan aplikasi web dapat diakses oleh pengguna melalui internet. Berikut adalah beberapa contoh aplikasi web server yang umum digunakan:
-<br>
-Apache HTTP Server:
-<br>
-Deskripsi: Apache adalah server web open-source yang sangat populer. Ini dapat dijalankan di berbagai sistem operasi, termasuk Linux, Windows, dan macOS.
-Situs Web: https://httpd.apache.org/
-Nginx:
-
-Deskripsi: Nginx adalah server web ringan dan scalable yang sering digunakan sebagai proxy reverse atau server load balancing. Nginx juga open-source dan dapat dijalankan di berbagai platform.
-Situs Web: https://nginx.org/
-Microsoft Internet Information Services (IIS):
-
-Deskripsi: IIS adalah server web yang dikembangkan oleh Microsoft untuk sistem operasi Windows. Ini menyediakan dukungan terintegrasi untuk teknologi web Microsoft seperti ASP.NET.
-Situs Web: https://www.iis.net/
-LiteSpeed Web Server:
-
-Deskripsi: LiteSpeed adalah server web yang diklaim memiliki performa yang tinggi dan efisien. Ini dapat berfungsi sebagai pengganti Apache atau Nginx.
-Situs Web: https://www.litespeedtech.com/
-Tomcat:
-
-Deskripsi: Apache Tomcat adalah server aplikasi web yang dikhususkan untuk menjalankan aplikasi berbasis Java Servlet dan JavaServer Pages (JSP).
-Situs Web: http://tomcat.apache.org/
-Caddy:
-
-Deskripsi: Caddy adalah server web modern yang dirancang untuk mudah dikonfigurasi dengan dukungan otomatis untuk SSL. Ini memiliki antarmuka pengguna yang ramah dan dapat digunakan sebagai server statis atau dinamis.
-Situs Web: https://caddyserver.com/
-Pilihan server web dapat bervariasi tergantung pada kebutuhan dan preferensi, dan seringkali dipilih berdasarkan kebutuhan khusus seperti kinerja, keamanan, atau integrasi dengan teknologi tertentu.
-    </p>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+    <h2>Contoh Aplikasi Web Server</h2>
+    <ul>
+        <li><a href="https://httpd.apache.org/">Apache HTTP Server</a></li>
+        <li><a href="https://nginx.org/">Nginx</a></li>
+        <li><a href="https://www.iis.net/">Microsoft Internet Information Services (IIS)</a></li>
+        <li><a href="https://www.litespeedtech.com/">LiteSpeed Web Server</a></li>
+        <li><a href="http://tomcat.apache.org/">Apache Tomcat</a></li>
+        <li><a href="https://caddyserver.com/">Caddy</a></li>
+    </ul>
+</body>
 </html>
